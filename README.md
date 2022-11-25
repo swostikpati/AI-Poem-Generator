@@ -1,5 +1,5 @@
 # FINAL PROJECT - AI POEM GENERATOR
-by Swostik Pati and Prince Ampofo
+***by Swostik Pati and Prince Ampofo***
 
 ## Introduction
 Our project is based on the idea of using algorithms to generate new poems using the existing poems in book The Thousand and one Nights. The algorithms used span from simple programs to complex ones built on machine learning and artificial intelligence. Our final goal is to consistently produce new poems using both types of algorithms and then compare their results in the end. In the end, we also analyze how machine-generated poems compare against human-composed ones. The poems that we are using are taken from the following chapters of the book: 
@@ -175,11 +175,11 @@ where myrtle daisy rose and gillyflowers grow
 if the house could know who came this way it would”***
 
 #### Highlights of Algorithm #4
-Since we trained this model from scratch with input poems only from The Thousand and One Nights, the algorithm generated poems using only words from the poems we fed it. It had no external influence whatsoever and the element of the poems we fed into it, popped out.
+• Since we trained this model from scratch with input poems only from The Thousand and One Nights, the algorithm generated poems using only words from the poems we fed it. It had no external influence whatsoever and the element of the poems we fed into it, popped out.
 
-We even tried out generic words like “Love” this time as input (just like we did in algorithm 3a), and the output results were no longer generic but rather very specific to the poems from The Thousand and One Nights, making our model completely different from the online generators that are fed with only external data and provide generalized responses.
+• We even tried out generic words like “Love” this time as input (just like we did in algorithm 3a), and the output results were no longer generic but rather very specific to the poems from The Thousand and One Nights, making our model completely different from the online generators that are fed with only external data and provide generalized responses.
 
-This model also provides the user with the option to change the number of words they want to generate thereby increasing customisability.
+• This model also provides the user with the option to change the number of words they want to generate thereby increasing customisability.
 
 ## Summary and Conclusion
 Providing machines with human creativity is difficult. It requires a lot of experiments, testings, and failures. This paper goes through the process of designing and testing all the algorithms before arriving at the final one. The first step was to understand the most fundamental concept behind creating a poem/story generator. We started by writing simple algorithms to create a generialized story generator and then using those understandings, created a poem generator. The major problem that we faced here was that unlike a story, it is difficult to segregate poems based on their sentence structure. The algorithm was also prone to excessive repetition of words. Taking our learnings from this trial, we pivoted our approach into completely randomizing the words generated, avoiding repetitions, and giving the user more power to customize the poems. This was implemented well, but the poems generated were still very rough and felt more like a bunch of words put together than a poem. This was the point where we decided that we had ample understanding of the fundamental concept and the next step was to integrate AI. We learned about the GPT-J model and learned how to implement it. We had to create our own dataset where we tagged all the emotions that we felt from each poem. The results that we got after feeding the poems into the model were much more cohesive and poem like, but there was one major problem - the model had already been trained by over 6 billion datapoints and our dataset didn’t hold any weight. This caused us to get very generalized responses. We somehow had to make the algorithm give more weight to our dataset to be able to find elements of The Thousand and One Nights in the generated poems. So instead of trying to generate new poems altogether, we tweaked the input to be entire poems and instead check the proficiency of the algorithms to extend the poems. This way, more weight was drawn from our datasets as the inputs weren’t generic keywords like “love” anymore and therefore the results that we received were coherent extensions of the poems that we fed as inputs. The extensions did have elements other than our dataset, but the major part of the poem was still constructed from the input we provided. The final step in our process of constructing an AI-based poem generator algorithm was to train and deploy an model completely from scratch just using the dataset we provide, keeping any external elements away. And this is exactly what we implemented in the end. We trained an AI model on Tensorflow and fed it with just our dataset of poems. This time we tried both generating and extending poems using the algorithm, and the results we received convinced us that our project was successful. The poems wer received were just constructed from The Thousand and One Nights, were cohesive, and were customizable (selecting output length). The model did a great job in combining the elements of different poems to generate new poems and even generated poems based on generic keywords like “love” (the responses in this case weren’t generalized at all.  It was a tough process of trial and error, testing and feedback, but in the end we finally were able to reach the ideal outcome we had hoped for. 
@@ -193,6 +193,10 @@ As for whether Galland would have used the poem/story generator if it was availa
 https://github.com/swostikpati/AI-Poem-Generator
 
 ## References
+
+• https://github.com/kingoflolz/mesh-transformer-jax/  
+• https://www.eleuther.ai/  
+• https://www.tensorflow.org/  
 
 
 
