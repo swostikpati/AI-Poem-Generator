@@ -168,10 +168,10 @@ trays of sweets pair surpass beg return return”***
 Input: “Love” (1001 Nights specific output for generalized keyword)
 
 Output:  
-***“Love is my law my drug inside and out 
-a note for loving eyes to read and read 
-met and welcome to mend 
-where myrtle daisy rose and gillyflowers grow 
+***“Love is my law my drug inside and out  
+a note for loving eyes to read and read  
+met and welcome to mend  
+where myrtle daisy rose and gillyflowers grow  
 if the house could know who came this way it would”***
 
 #### Highlights of Algorithm #4
